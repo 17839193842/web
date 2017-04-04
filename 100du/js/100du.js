@@ -1,5 +1,3 @@
-// 妙味官网：www.miaov.com
-// 技术交流：bbs.miaov.com
 
 $(function (){
 	// 切换搜索框
@@ -40,20 +38,20 @@ $(function (){
 		});
 	})();
 	
-	// update文字弹性滑动
+	// update文字滑动
 	(function (){
 		var oDiv = $('.update');
 		var oUl = oDiv.find('ul');
 		var iH = 0;
 		var arrData = [
-			{ 'name':'萱萱', 'time':4, 'title':'那些灿烂华美的瞬间', 'url':'http://www.miaov.com/2013/' },
-			{ 'name':'畅畅', 'time':5, 'title':'广东3天抓获涉黄疑犯', 'url':'http://www.miaov.com/2013/#curriculum' },
-			{ 'name':'萱萱', 'time':6, 'title':'国台办回应王郁琦', 'url':'http://www.miaov.com/2013/#about' },
-			{ 'name':'畅畅', 'time':7, 'title':'那些灿烂华美的瞬间', 'url':'http://www.miaov.com/2013/#message' },
-			{ 'name':'萱萱', 'time':8, 'title':'那些灿烂华美的瞬间', 'url':'http://www.miaov.com/2013/' },
-			{ 'name':'畅畅', 'time':9, 'title':'广东3天抓获涉黄疑犯', 'url':'http://www.miaov.com/2013/#curriculum' },
-			{ 'name':'萱萱', 'time':10, 'title':'国台办回应王郁琦', 'url':'http://www.miaov.com/2013/#about' },
-			{ 'name':'畅畅', 'time':11, 'title':'那些灿烂华美的瞬间', 'url':'http://www.miaov.com/2013/#message' }
+			{ 'name':'萱萱', 'time':4, 'title':'那些灿烂华美的瞬间', 'url':'http://www.baidu.com' },
+			{ 'name':'畅畅', 'time':5, 'title':'广东3天抓获涉黄疑犯', 'url':'https://www.hao123.com'},
+			{ 'name':'萱萱', 'time':6, 'title':'国台办回应王郁琦', 'url':'https://www.360.cn/' },
+			{ 'name':'畅畅', 'time':7, 'title':'那些灿烂华美的瞬间', 'url':'http://www.imooc.com/course/landingpagephp?from=phpkecheng' },
+			{ 'name':'萱萱', 'time':8, 'title':'那些灿烂华美的瞬间', 'url':'https://www.hao123.com'},
+			{ 'name':'畅畅', 'time':9, 'title':'广东3天抓获涉黄疑犯', 'url':'http://www.imooc.com/course/landingpagephp?from=phpkecheng'  },
+			{ 'name':'萱萱', 'time':10, 'title':'国台办回应王郁琦', 'url':'http://www.baidu.com'},
+			{ 'name':'畅畅', 'time':11, 'title':'那些灿烂华美的瞬间', 'url':'https://www.360.cn/' }
 		];
 		var str = '';
 		var oBtnUp = $('#updateUpBtn');
