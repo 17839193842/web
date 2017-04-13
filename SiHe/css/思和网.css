@@ -105,8 +105,8 @@ a{text-decoration:none;}
 		  
 		  aside li:hover div{display:block;}
 		  .nav4 ul{width:100%;height:100%;}
-		  .nav4 ul li{width:25px;height:25px;border-radius:50%;float:left;margin-left:5px;background:#555;
-		     text-align:center;color:white;cursor:pointer;}
+		  .nav4 ul li{;cursor:pointer;width:25px;height:25px;border-radius:50%;float:left;margin-left:5px;background:#555;
+		     text-align:center;color:white}
 		   .nav4 ul li.click,.nav4 ul li:hover{background:orange;} 
 		   
 		   
