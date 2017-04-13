@@ -106,7 +106,7 @@ a{text-decoration:none;}
 		  aside li:hover div{display:block;}
 		  .nav4 ul{width:100%;height:100%;}
 		  .nav4 ul li{width:25px;height:25px;border-radius:50%;float:left;margin-left:5px;background:#555;
-		     text-align:center;color:white;}
+		     text-align:center;color:white;cursor:pointer;}
 		   .nav4 ul li.click,.nav4 ul li:hover{background:orange;} 
 		   
 		   
@@ -121,7 +121,7 @@ a{text-decoration:none;}
 		.l_content{width:1000%;position:relative;}
 		.l_content ul{width:1200px;height:263px;float:left;}
 		.l_content li{width:198px;height:263px;float:left;text-align:center;border:1px solid #eee;
-		     position:relative;top:0px;transition:all .4s ease;}
+		     position:relative;top:0px;transition:all .4s ease;cursor:pointer;}
 		.l_content li img{width:165px;height:165px;margin-top:10px;}
 		.l_content li .price{height:30px;line-height:30px;text-align:left;color:red;}
 		.l_content li p{height:30px;line-height:30px;font-size:12px;color:#777;}
@@ -147,7 +147,7 @@ a{text-decoration:none;}
 		.a_active h3{width:1200px;height:46px;line-height:46px;color:#555;}
 		.a_active .active{width:1200px;height:300px;}
 		.a_active .active ul{position:relative;} 
-		.active li{width:294px;height:297px;margin-right:6px;float:left;position:relative;top:0px;transition:all .4s ease;}
+		.active li{width:294px;height:297px;margin-right:6px;cursor:pointer;float:left;position:relative;top:0px;transition:all .4s ease;}
 		.active li img{width:294px;height:297px;}
 		.active li a{display:block;}
 		.active li:hover{box-shadow:5px 10px 10px 8px #eee;top:-5px;}
@@ -158,7 +158,7 @@ a{text-decoration:none;}
    #ul{width:100%;height:5640px;}
 		#ul .u_li{width:1210px;height:5640px;margin:0 auto;}
 		.u_li ul{width:100%;height:100%;}
-		.u_li ul li{width:1210px;height:564px;}
+		.u_li ul li{width:1210px;height:564px;cursor:pointer;}
 	    .floor .f_top{width:1210px;height:46px;}
 	   .floor h3{line-height:46px;height:46px;color:#555;font-weight:normal;font-size:20px;float:left;
 	        margin-left:50px;}
