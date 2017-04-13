@@ -38,9 +38,9 @@ a{text-decoration:none;}
 		      background:rgb(60,98,163);float:left;text-decoration:none;font-size:16px;}
 		.ul1{width:200px;height:50px;line-height:50px;float:left;}
 		.ul1 li{width:46px;height:40px;line-height:40px;float:left;list-style:none;font-size:12px;
-		       margin-right:5px;color:#333;}
+		       margin-right:5px;color:#333;cursor:pointer;}
 		.ul1 li:last-child{width:80px;margin-left:10px;font-size:12px;}
-		.ul1 li a{text-decoration:none;display:block;}
+		.ul1 li a{text-decoration:none;display:block;cursor:pointer;}
 		.ul1 li a:hover{color:red;}
 			
 			
@@ -57,7 +57,7 @@ a{text-decoration:none;}
 		.nav2 span a{display:inline-block;font-size:14px;margin-left:10px;text-decoration:none;color:#333;}
 		.nav2 span a:hover{color:red;}
 		.head2 .shopbite{width:200px;height:44px;float:left;}
-		.shopbite a{display:block;width:150px;height:44px;margin-left:40px;line-height:44px;
+		.shopbite a{display:block;width:150px;height:44px;margin-left:40px;line-height:44px;cursor:pointer;
 		    border:1px solid #999;background:#eee;margin-top:4px;text-indent:10px;font-size:14px;color:#555;}
 		
 		.shopbite a i{margin-right:10px;}    
@@ -66,7 +66,7 @@ a{text-decoration:none;}
 		#content .c_top{width:1200px;height:35px;margin:0 auto;}
 		#c_content{width:100%;height:450px;position:absolute;z-index:-1;}
 		#c_content ul{width:100%;height:100%;}
-		#c_content ul li{display:none;position:absolute;top:0px;left:0px;}
+		#c_content ul li{display:none;position:absolute;top:0px;left:0px;cursor:pointer;}
 		.content .ul4{width:200px;height:450px;background:#00BFFF;float:left;}
 		.content .ul4 li{width:200px;height:30px;line-height:30px;text-indent:15px;font-size:16px;
 		     }
@@ -89,7 +89,7 @@ a{text-decoration:none;}
 		   line-height:35px;color:white;}
 		.c_top .ul3{width:65%;height:35px;float:left;margin-left:10px;}
 		.ul3 li{float:left;display:inline-block;width:12%;height:35px;line-height:35px;font-weight:700;
-		color:midnightblue;}
+		color:midnightblue;cursor:pointer;}
 		.ul3 li:first-child{margin-left:20px;}
 		.ul3 li a{display:block;}
 		.ul3 li a:hover{color:orange;}
@@ -218,7 +218,7 @@ a{text-decoration:none;}
 	   .u_left9 .u_l_top{width:576px;height:256px;position:relative;}
 	   .u_l_top .Li{width:50px;height:20px;position:absolute;bottom:10px;left:300px;}
 	   .Li ul{width:100%;height:100%;}
-	   .Li ul li{width:12px;height:12px;border:1px solid #666;border-radius:50%;float:left;margin-left:8px;}
+	   .Li ul li{width:12px;height:12px;border:1px solid #666;border-radius:50%;float:left;margin-left:8px;cursor:pointer;}
 	   .u_left9 .u_l_l{width:190px;height:256px;float:left;}
 	   .forth .radius div:hover{color:white;background:mistyrose;}
 	   .forth .ul7 li:last-child a{color:red;}
@@ -254,7 +254,7 @@ a{text-decoration:none;}
 		#footer2{width:100%;height:190px;}
 		.f_content{width:1200px;height:190px;margin:0 auto;}
 		.f_nav{width:188px;height:190px;float:left;}
-		.f_nav li{margin-left:35px;width:70px;height:26px;text-align:center;font-size:12px;}
+		.f_nav li{margin-left:35px;width:70px;height:26px;text-align:center;font-size:12px;cursor:pointer;}
 		.f_nav li:first-child{font-size:14px;font-weight:600;}
 		.f_nav li a{display:block;color:#999;}
 		.f_nav li a:hover{color:#111;}
@@ -265,7 +265,7 @@ a{text-decoration:none;}
 		.f_con{width:1200px;height:203px;margin:0 auto;}
 		.f_con .f_l{width:100%;height:40px;}
 		.f_con .f_l ul{height:40px;margin-top:20px;width:100%;}
-		.f_con .f_l ul li{width:60px;height:40px;line-height:40px;float:left;font-size:12px;text-align:left;}
+		.f_con .f_l ul li{width:60px;height:40px;line-height:40px;float:left;font-size:12px;text-align:left;cursor:pointer;}
 		.f_con .f_l ul li a{display:block;color:white;}
 		.f_con .f_l ul li a:hover{text-decoration:underline;}
 		.f_con .f_u{height:30px;width:100%;margin-top:10px;}
