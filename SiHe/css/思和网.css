@@ -94,9 +94,9 @@ a{text-decoration:none;}
 		.ul3 li a{display:block;}
 		.ul3 li a:hover{color:orange;}
 		aside{position:fixed;left:30px;top:150px;width:40px;height:440px;border:1px solid #999;}
-		aside li{;cursor:pointer;width:40px;height:40px;line-height:40px;text-align:center;position:relative;
+		aside li{cursor:pointer;width:40px;height:40px;line-height:40px;text-align:center;position:relative;
 		   border-bottom:1px solid #999;background:whitesmoke;}
-		   aside li div{display:none;color:red;border:1px solid red;width:39px;height:39px;position:absolute;
+		   aside li div{cursor:pointer;display:none;color:red;border:1px solid red;width:39px;height:39px;position:absolute;
 		      top:0px;left:0px;font-size:14px;line-height:19px;}
 		  .nav4{width:160px;height:30px;position:absolute;bottom:20px;left:500px;}
 		 @media screen and(max-width:1000px){
