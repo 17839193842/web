@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>vue-请求发送数据</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.3.6/vue-resource.js"></script>
+		<style>
+			*{
+				padding:0px;
+				margin:0px;
+			}
+			ul,li{
+				list-style:none;
+			}
+			.gray{
+				background:#f0f0f0;
+			}
+		 	#app{width: 100%;height: 100%;}
+			.title {width: 100%;text-align: center;line-height: 50px;color: #fff;background: yellowgreen;}
+			.content {width: 639px;margin: 50px auto;position: relative;}
+			.content .first {width: 100%;font-size: 0;}
+			/*---------------------------------------------搜索框*/
+			.content_input .search_field{ /*输入框样式*/
+			    width: 522px;
+			    height: 38px;
+			    line-height: 38px;
+			    border: 1px solid #3388FF;
+			    float: left;
+			    padding-left: 10px;
+			    font-size: 18px;
+			    color: #666;
+			}
+			.content_input .search_btn{ /*按钮样式*/
+			    width: 103px;
+			    height: 40px;
+			    line-height: 40px;
+			    color: #FFFFFF;
+			    font-weight: 600;
+			    background: #3388FF;
+			    border:none;
+			    float: left;
+			    font-size: 20px;
+			}
+			/*===-----------------------------*/
+			.list {border: 1px solid #ccc;border-top: none;}
+			.list li{font-size: 18px;padding:5px 10px;}
+			.content>p {font-size: 18px;}
+			.clearfix:after{
+				content:"";
+				display:table;
+				height:0px;
+				line-height:0px;
+				clear: both;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<div class="content">
+	    		<div class="first">
+	    			<div class="content_input clearfix">
+					<input type="text" v-model="searchText" class="search_field" @keyup="gets($event)" @keydown.down="down()" @keyup.up="up()" />
+					<button class="search_btn" @click='open'>查询</button> 
+				    </div>
+				</div>
+				<ul class="list">
+					<li v-for="(value,index) in myData" :class="{gray:nowIndex==index}">{{value}}</li>
+				</ul>
+				<p v-show='myData.length==0'>暂无数据...</p>
+			</div>
+		</div>
+		<script>
+			new Vue({
+				el:"#app",
+				data:{
+					myData:[],
+					searchText:'',
+					nowIndex:-1
+				},
+				methods:{
+					gets(e){
+						this.searchText=this.searchText;
+			  				if(e.keyCode == 38 || e.keyCode == 40){
+			  					return;
+			  				}
+			  				if(e.keyCode == 13){
+			  					window.open('https://www.baidu.com/s?wd='+this.searchText);
+			  					this.searchText='';
+			  					return;
+			  				}
+						this.$http.jsonp('https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su',
+						   {
+						   	params:{
+						   		wd:this.searchText
+						   	},
+						   	jsonp:'cb'
+						   }).then(function(res){
+						   	this.myData=JSON.parse(res.bodyText).s;
+						},function(res){
+							alert(res.status)
+						})
+					},
+					down(){
+						this.nowIndex++;
+						if(this.nowIndex==this.myData.length){
+							this.nowIndex=0;
+						}
+						this.searchText=this.myData[this.nowIndex]
+					},
+					up(){
+						this.nowIndex--;
+						if(this.nowIndex==-1){
+							this.nowIndex=this.myData.length-1;
+						}
+						this.searchText=this.myData[this.nowIndex]
+					},
+					open:function(){
+						window.open('https://www.baidu.com/s?wd='+this.searchText);
+						this.searchText=''
+					}
+					
+					
+				}
+			})
+		</script>
+	</body>
+</html>
